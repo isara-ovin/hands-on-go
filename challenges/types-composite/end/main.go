@@ -61,7 +61,7 @@ func main() {
 	// lookup books by known author in the library
 	books := lib.lookupByAuthorName(jb.name)
 
-	// spew.Dump(books)
+	spew.Dump(books)
 
 	// print out the first book's title and its author's name
 	if len(books) != 0 {
