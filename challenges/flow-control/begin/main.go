@@ -47,9 +47,6 @@ func main() {
 	counts["words"] = len(words)
 
 	// use for-range to iterate over the words slice and for each word, count the number of letters, numbers, and symbols, storing them in the map
-	for _, w := range words{
-		
-	}
 
 	// dump the map to the console using the spew package
 	//
