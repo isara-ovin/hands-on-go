@@ -1,4 +1,4 @@
-package sample
+package main
 
 import "fmt"
 
@@ -10,7 +10,7 @@ type bmw struct {
 type benz struct {
 	distance float64
 	fuel     float64
-	speed    int
+	speed    string
 }
 
 // Recivers for each mileage
@@ -26,7 +26,7 @@ type vehicle interface {
 	mileage() float64
 }
 
-func main() {
+func sample() {
 
 	b := bmw{
 		distance: 1000.0,
@@ -36,7 +36,7 @@ func main() {
 	z := benz{
 		distance: 1000.0,
 		fuel:     33.3,
-		speed:    86,
+		speed:    "86km\\h",
 	}
 
 	mileages := []vehicle{b, z}
